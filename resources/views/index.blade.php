@@ -6,7 +6,7 @@
   @if(Session::get('url'))
     <ul class="list-group">
       <li class="list-group-item list-group-item-success">
-        {{ "http://127.0.0.1:8000/s/" . Session::get('url') }}
+        {{ env('APP_URL') . "s/" . Session::get('url') }}
       </li>
     </ul>
   @endif
