@@ -23,7 +23,8 @@ class AdminController extends Controller {
   }
 
   public function dashboard() {
-    return view('dashboard.index');
+    if (Auth::check()) return view('dashboard.index');
+    return redirect('/admin');
   }
 
   public function logout() {
