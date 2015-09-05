@@ -18,7 +18,7 @@ class SiteController extends Controller
      */
     public function index()
     {
-      $stat = Stat::find(3);
+      $stat = Stat::where('page_views', '>=', 0)->first();
       $stat->page_views = $stat->page_views + 1;
       $stat->save();
 
@@ -58,7 +58,7 @@ class SiteController extends Controller
 
         $new_url->save();
 
-        $stat = Stat::find(3);
+        $stat = Stat::where('links_created', '>=', 0)->first();
         $stat->links_created = $stat->links_created + 1;
         $stat->save();
       }
