@@ -14,7 +14,7 @@
   {!! Form::open(['route' => 'create', 'class' => 'form']) !!}
     <div class="form-inline">
       {!! Form::text('url', null, array('required', 'class' => 'form-control', 'placeholder' => 'http://example.com')) !!}
-      {!! Form::submit('Create', array('class' => 'btn btn-primary')) !!}
+      {!! Form::submit('Shorten', array('class' => 'btn btn-primary')) !!}
     </div>
   {!! Form::close() !!}
 
