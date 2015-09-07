@@ -27,6 +27,7 @@
   <div style="position: absolute; width: 100%; left: auto; right: auto; bottom: 50px;">
     Made with <a href="http://laravel.com/">Laravel</a>
     and <a href="http://getbootstrap.com/">Bootstrap</a>
-    by <a href="http://jessehorne.github.io/">me</a>
+    by <a href="http://jessehorne.github.io/">me</a> |
+    Fork it on GitHub <a href="https://github.com/jessehorne/breh.xyz">Here</a>
   </div>
 @endsection
