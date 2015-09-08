@@ -17,6 +17,9 @@ Route::get('/s/{id}', function($id) {
   if ($url === null) {
     return redirect('/');
   } else {
+    $stat = App\Stat::first();
+    $stat->link_uses += 1;
+    $stat->save();
     return redirect($url->long_url);
   }
 });

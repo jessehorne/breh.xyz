@@ -12,5 +12,9 @@
       <b>Links Created -</b>
       <p style="display: inline-block; margin-left: 10px;">{{ DB::table('stats')->first()->links_created }}</p>
     </li>
+    <li class="list-group-item">
+      <b>Link Uses -</b>
+      <p style="display: inline-block; margin-left: 10px;">{{ DB::table('stats')->first()->link_uses }}</p>
+    </li>
   </ul>
 @endsection
